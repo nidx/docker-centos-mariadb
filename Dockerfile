@@ -4,4 +4,4 @@ ADD MariaDB.repo /etc/yum.repos.d/MariaDB.repo
 RUN yum install -y MariaDB-server
 VOLUME ["/var/lib/mysql"]
 EXPOSE 3306
-CMD ["/usr/sbin/mysqld_safe"]
+CMD ["/usr/bin/mysqld_safe"]
